@@ -9,7 +9,7 @@ function ToDoPage(props) {
     if(!user) {
         return (<>
         <AppBar/>
-        <Title>YOU'RE NOT WELCOME GO AWAY</Title>
+        <Title>YOU&apos;RE NOT WELCOME GO AWAY</Title>
         </>)
     }
 

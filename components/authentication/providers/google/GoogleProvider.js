@@ -11,6 +11,7 @@ function GoogleProvider({ children,  ...props }) {
         <Image
           src={google}
           layout="fixed"
+          alt="google"
           width={24}
           height={24}
           quality={30}
