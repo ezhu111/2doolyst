@@ -1,4 +1,4 @@
-import { UseEffect, UseState } from 'react'
+import { useEffect, useState } from 'react'
 import {collection, getDocs} from 'firebase/firestore'
 
 import {db} from 'libs/firebase'
@@ -15,9 +15,9 @@ function UserProfile({age, fullName, address, ...props}){
 
 function index (props) {
     //read a single doc from a collection
-    const [users, setUsers] = UseState([])
+    const [users, setUsers] = useState([])
 
-    UseEffect(()=>{
+    useEffect(()=>{
         async function getFirebaseDoc(){
             const ref = collection(db, 'users')
             const userSnapshot = await getDocs(ref)
