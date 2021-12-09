@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { UseState, UseEffect } from "react";
 import Link from 'next/link'
 import { v4 as uuid } from "uuid";
 import { IoIosArrowRoundBack } from "react-icons/io";
@@ -17,10 +17,10 @@ import {
 
 function AddItemPage(props) {
     const user = useAuth();
-    const [uid, setUid] = useState()
-    const [desc, setDesc] = useState('')
+    const [uid, setUid] = UseState()
+    const [desc, setDesc] = UseState('')
 
-    useEffect(()=>{
+    UseEffect(()=>{
         setUid(uuid().substring(0,8))
     }, [])
 
